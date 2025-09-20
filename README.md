@@ -54,3 +54,4 @@ This repository is configured to work with the Self-Healing Codebase Sentinel:
 2. Run tests: `python -m pytest test_*.py -v`
 3. Configure Sentinel webhook URL in GitHub secrets
 4. Watch the magic happen! ✨
+5. "Testing Sentinel - this should trigger the self-healing system!"
