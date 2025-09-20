@@ -23,7 +23,7 @@ jobs:
       - name: Run tests
         run: |
           python -m pytest test_*.py -v
-        continue-on-error: true
+        
       
       - name: Notify Sentinel on failure
         if: failure()
@@ -31,7 +31,7 @@ jobs:
           curl -X POST ${{ secrets.SENTINEL_URL }}/webhooks/ci/failure \
             -H "Content-Type: application/json" \
             -d '{"repo": "${{ github.repository }}", "failing_test": "pytest", "logs": "Test failure detected", "diff": "CI failure"}'
-        continue-on-error: true
+     
 
   notify-sentinel:
     needs: test
