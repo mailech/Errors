@@ -53,13 +53,7 @@ jobs:
                 issue_number: context.issue.number,
                 body: `## 🤖 Sentinel Validation Complete!
                 
-✅ **All tests are now passing!**
-                
-### 🔧 Fixes Applied:
-- Fixed math operations bugs
-- Fixed data processing logic errors
-- Corrected off-by-one errors
-- Fixed conditional logic
+
 
 ### 📊 Results:
 - **Tests**: ✅ All passing
